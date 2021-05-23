@@ -1,9 +1,12 @@
-var timeLeft = 10;
+var timeout = setTimeout(function(){""})
 
-var downloadTimer = setInterval(function() {
-    if (timeLeft <=0){
+document.getElementById("Start Quiz").addEventListener("click", function() {
+    var timeleft = 30;
+    var downloadTimer = setInterval(function() {
+    if (timeleft <=0){
         clearInterval(downloadTimer);
     } 
-    document.getElementById("progressBar").value = 10 - timeLeft;
-    timeLeft-=1;
+    document.getElementById("progressBar").value = 30 - timeleft;
+    timeleft -= 1;
 }, 1000);
+})
