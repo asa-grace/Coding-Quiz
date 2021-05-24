@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/script.js"></script>
         <title>JavaScript Knowledge Quiz</title>
     </head>
 
@@ -16,21 +17,21 @@
                     <p>You will be timed for 1 minute. The faster you finish the higher your score. Click the "Start Quiz" button below to begin!</p>
                 </div>
                 <div class="form-group">
-                    <button class="btn" id="start-btn">Start Quiz</button>
+                    <button class="start-btn" id="start-btn">Start Quiz</button>
                 </div>
             </div>    
         </main>
-        
-        <footer>
-            &copy;2021 Asa Grace
-        </footer>
 
-
-        <main class="questions">
-            
-        </main>
-        
-        <script src="assets/js/script.js"></script>
-        
+        <div class="container" class="hide">
+            <div id="question-container">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>    
+        </div>
     </body>
 </html>

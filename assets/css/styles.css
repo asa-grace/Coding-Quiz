@@ -33,7 +33,7 @@ body.wrong {
     width: 800px;
     height: 400px;
     max-width: 80%;
-    background-color: aqua;
+    background-color: #44cece;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 }
@@ -47,9 +47,14 @@ body.wrong {
     height: 100%;
 }
 
-.btn {
+.start-btn {
     height: 100px;
-    background-color: hsla(0, 53%, 78%, 0.582);
+    background-color: hsla(104, 18%, 39%, 0.945);
+}
+
+.start-btn:hover {
+    border-color: black;
+    text-shadow: rgb(170, 79, 255);
 }
 
 .info {
@@ -60,5 +65,43 @@ body.wrong {
     width:100%;
     background: hsl(var(--hue), 100%, 20%);
     font-size: 4.5rem;
+    bottom:auto;
+}
 
+.container {
+    width: 800px;
+    max-width:  80%;
+    background-color: #44cece;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:hsla(180, 58%, 54%, 0.733)
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.answer-buttons {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.btn {
+    background-color: #b777f3;
+}
+
+.btn:hover {
+    border-color: black;
+    text-shadow: rgb(170, 79, 255); 
+}
+
+.hide {
+    display: none;
 }

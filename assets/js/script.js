@@ -1,11 +1,13 @@
 var startButton = document.getElementById('start-btn')
+var answerButton = document.getElementById('answer-buttons')
 
-startButton.addEventListener('click', startQuiz)
+startButton.addEventListener("click", startQuiz)
 
 function startQuiz() {
-startButton.classList.add('hide')
-questionContainerElement.classList.remove('hide')
-setNextQuestion()
+    console.log('started')
+    startButton.classList.add('hide')
+    questionContainerElement.classList.remove('hide')
+    setNextQuestion()
 }
 
 function setNextQuestion() {
@@ -48,9 +50,10 @@ var questions = [
         question: 'What would you use to call a function',
         answers: [
             { text: 'call', correct: false },
-            { text: 'return', correct: false },
+            { text: 'return', correct: true },
             { text: 'summon', correct: false },
             { text: 'bring forth please', correct: false }
         ]
     },
 ]
+
