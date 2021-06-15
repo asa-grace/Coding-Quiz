@@ -1,5 +1,6 @@
 var startButton = document.getElementById('start-btn')
-var answerButton = document.getElementById('answer-buttons')
+var questionContainerElement = document.getElementById('container')
+var startForm = document.getElementById('form-group')
 
 startButton.addEventListener("click", startQuiz)
 
@@ -11,7 +12,7 @@ function startQuiz() {
 }
 
 function setNextQuestion() {
-
+    
 }
 
 function selectAnswer() {
